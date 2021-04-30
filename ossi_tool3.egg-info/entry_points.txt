@@ -1,0 +1,3 @@
+[console_scripts]
+ossi_tool3 = ossi_tool3.ossit:main
+

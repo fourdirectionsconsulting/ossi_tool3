@@ -20,6 +20,7 @@ setup(name='ossi_tool3',
       version=version,
       description='Avaya SAT (Communication Manager Site Administration Tool) python emulator, to generate CSV file from command output',
       long_description=long_descr,
+      long_description_content_type='text/plain',
       classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Console',

@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+ossi_tool3/__init__.py
+ossi_tool3/__main__.py
+ossi_tool3/ossit.py
+ossi_tool3.egg-info/PKG-INFO
+ossi_tool3.egg-info/SOURCES.txt
+ossi_tool3.egg-info/dependency_links.txt
+ossi_tool3.egg-info/entry_points.txt
+ossi_tool3.egg-info/not-zip-safe
+ossi_tool3.egg-info/requires.txt
+ossi_tool3.egg-info/top_level.txt
