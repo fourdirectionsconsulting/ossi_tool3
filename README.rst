@@ -1,7 +1,7 @@
-ossi_tool
+ossi_tool3
 -------------------------
 
-It is a Python script to emulate Avaya SAT (Communication Manager Site Administration Tool)
+It is a Python (3.x) script to emulate Avaya SAT (Communication Manager Site Administration Tool)
 to execute multiple commands, and write output data into the CSV file for later processing.
 It should be ideal tool to repeat a command multiple times which not available as import in
 Avaya Site Administration Tool (eg. list usage).
