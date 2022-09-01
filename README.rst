@@ -15,9 +15,13 @@ As input arguments need to define the followings:
 
 For all available option use "ossi_tool3 -h" 
 
-Usage example:
+---------------
+Usage examples:
+---------------
 
 #ossi_tool3 192.168.10.10 sampleuser -ppassword -i commands.csv -o outputfile.csv
+#ossi_tool3 192.168.10.10 sampleuser -ppassword -c "list vdn" -o outputfile.csv
+#ossi_tool3 192.168.10.10 sampleuser -ppassword -c "list usage vdn xxxx" -o outputfile.csv
 
 ---------------------
 Installation (Linux):

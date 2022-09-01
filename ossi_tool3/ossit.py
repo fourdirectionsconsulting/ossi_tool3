@@ -83,7 +83,10 @@ class Ossi(object):
             if self.debug is not None:
                 self.s.logfile = open("debug.log", "wb")
             try:
-                self.s.login(self.host, self.username, self.password)
+                self.s.login(self.host,
+                            self.username,
+                            self.password, original_prompt='[#$>t\]]',
+                            password_regex='(?i)(?:password:)')
                 self.s.timeout = 5
                 if self.no_echo is None:
                     print ("--- Connection established ---")
@@ -160,7 +163,7 @@ class Ossi(object):
                 for self.row in self.info:
                     # self.row_cmd = ' '.join(self.row)
                     self.cmd = ' '.join(self.row)
-                    if len(self.cmd.translate(None, ' \n\t\r')) > 0:
+                    if len(self.cmd.translate(str.maketrans('','', ' \n\t\r'))) > 0:
                         if self.no_echo is None:
                             print ('-------- \n\r{0}\n\r--------'.format(self.cmd))
                             self.output_writer('-------- \n{0}\n--------\n'.format(self.cmd))
