@@ -265,13 +265,14 @@ class Ossi(object):
             elif re.match('^d', self.line):
                 self.result = self.line.lstrip('d')
                 if len(self.result) != 0:
+                    self.result = "\"" + self.result + "\""
                     if len(self.page_data) > 0:
                         if self.new_record is False:
                             self.page_data +=  ','
-                        self.page_data += re.sub('\t', ',', self.result)
+                        self.page_data += re.sub('\t', '\",\"', self.result)
                         self.new_record = False
                     else:
-                        self.page_data += re.sub('\t', ',', self.result)
+                        self.page_data += re.sub('\t', '\",\"', self.result)
                         self.new_record = False
             elif re.match('^n', self.line):
                 self.page_data += "\n"
